@@ -83,7 +83,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="/profile">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>
@@ -112,21 +112,21 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="#">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="users-profile.html">
+        <a class="nav-link collapsed" href="/profile">
           <i class="bi bi-menu-button-wide"></i>
           <span>My Profile</span>
         </a>
       </li><!-- End Components Nav -->
       
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="cart.html">
+        <a class="nav-link collapsed" href="/cart">
           <i class="bi bi-menu-button-wide"></i>
           <span>My cart</span>
         </a>
@@ -167,27 +167,52 @@
                       <tr>
                         <th scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt=""></a></th>
                         <td><a href="#" class="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></td>
-                        <td><button type="button" class="btn btn-outline-success btn-sm">Add to cart</button></td>
+                        <td>
+                        <form action="#" th:action="@{/add-item}" method="post"  >
+	                        <input type="hidden" value="1" name="productId" />
+	                        <button type="submit" class="btn btn-outline-success btn-sm">Add to cart</button>
+                        </form>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#"><img src="assets/img/product-2.jpg" alt=""></a></th>
                         <td><a href="#" class="text-primary fw-bold">Exercitationem similique doloremque</a></td>
-                        <td><button type="button" class="btn btn-outline-success btn-sm">Add to cart</button></td>
+                        <td>
+                        <form action="#" th:action="@{/add-item}" method="post"  >
+	                        <input type="hidden" value="1" name="productId" />
+	                        <button type="submit" class="btn btn-outline-success btn-sm">Add to cart</button>
+                        </form>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#"><img src="assets/img/product-3.jpg" alt=""></a></th>
                         <td><a href="#" class="text-primary fw-bold">Doloribus nisi exercitationem</a></td>
-                        <td><button type="button" class="btn btn-outline-success btn-sm">Add to cart</button></td>
+                        <td>
+                        <form action="#" th:action="@{/add-item}" method="post"  >
+	                        <input type="hidden" value="1" name="productId" />
+	                        <button type="submit" class="btn btn-outline-success btn-sm">Add to cart</button>
+                        </form>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#"><img src="assets/img/product-4.jpg" alt=""></a></th>
                         <td><a href="#" class="text-primary fw-bold">Officiis quaerat sint rerum error</a></td>
-                        <td><button type="button" class="btn btn-outline-success btn-sm">Add to cart</button></td>
+                        <td>
+                        <form action="#" th:action="@{/add-item}" method="post"  >
+	                        <input type="hidden" value="1" name="productId" />
+	                        <button type="submit" class="btn btn-outline-success btn-sm">Add to cart</button>
+                        </form>
+                        </td>
                       </tr>
                       <tr>
                         <th scope="row"><a href="#"><img src="assets/img/product-5.jpg" alt=""></a></th>
                         <td><a href="#" class="text-primary fw-bold">Sit unde debitis delectus repellendus</a></td>
-                        <td><button type="button" class="btn btn-outline-success btn-sm">Add to cart</button></td>
+                        <td>
+                        <form action="#" th:action="@{/add-item}" method="post"  >
+	                        <input type="hidden" value="1" name="productId" />
+	                        <button type="submit" class="btn btn-outline-success btn-sm">Add to cart</button>
+                        </form>
+                        </td>
                       </tr>
                     </tbody>
                   </table>

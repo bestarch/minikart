@@ -83,7 +83,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="/profile">
                 <i class="bi bi-person"></i>
                 <span>My Profile</span>
               </a>
@@ -112,21 +112,21 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link collapsed" href="/dashboard">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="users-profile.html">
+        <a class="nav-link collapsed" href="/profile">
           <i class="bi bi-menu-button-wide"></i>
           <span>My Profile</span>
         </a>
       </li><!-- End Components Nav -->
       
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="cart.html">
+        <a class="nav-link" href="#">
           <i class="bi bi-menu-button-wide"></i>
           <span>My cart</span>
         </a>
@@ -145,7 +145,7 @@
       <div class="row">
 
         <!-- Left side columns -->
-        <div class="col-lg-12">
+        <div class="col-lg-8">
           <div class="row">
 
             <!-- Top Selling -->
@@ -158,19 +158,20 @@
                   <table class="table table-borderless">
                     <thead>
                       <tr>
-                        <th scope="col">Product</th>
+                        <th scope="col">Items</th>
+                        <!--<th scope="col">Quantity</th>-->
                         <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt=""></a></th>
-                        <a href="#" class="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a>
+                        <th scope="row"><a href="#"><img src="assets/img/product-1.jpg" alt=""></a>
+                        <a href="#" class="text-primary fw-bold">Ut inventore ipsa voluptas nulla</a></th>
                         <td><button type="button" class="btn btn-outline-danger btn-sm">Remove</button></td>
                       </tr>
                       <tr>
-                        <th scope="row"><a href="#"><img src="assets/img/product-2.jpg" alt=""></a></th>
-                        <a href="#" class="text-primary fw-bold">Exercitationem similique doloremque</a>
+                        <th scope="row"><a href="#"><img src="assets/img/product-2.jpg" alt=""></a>
+                        <a href="#" class="text-primary fw-bold">Exercitationem similique doloremque</a></th>
                         <td><button type="button" class="btn btn-outline-danger btn-sm">Remove</button></td>
                       </tr>
                     </tbody>

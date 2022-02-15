@@ -26,5 +26,26 @@ public class UserController {
         mv.addObject(user);
         return mv;
     }
+    
+    @PostMapping(value = "/add-item")
+    public ModelAndView addItem(User user, BindingResult result, Model model) {
+    	ModelAndView mv = new ModelAndView("dashboard");
+        mv.addObject(user);
+        return mv;
+    }
 
+    @GetMapping(value = {"/cart"})
+    public ModelAndView cart(User user) {
+    	ModelAndView mv = new ModelAndView("cart");
+        mv.addObject(user);
+        return mv;
+    }
+    
+    @GetMapping(value = {"/profile"})
+    public ModelAndView profile(User user) {
+    	ModelAndView mv = new ModelAndView("profile");
+        mv.addObject(user);
+        return mv;
+    }
+    
 }
